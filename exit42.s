@@ -1,8 +1,10 @@
-.intel_syntax noprefix
+
 .global _start
 
 _start:
-    move rdi, 42  
-    mov rax, 60   
-    syscall    
+    mov x0, #42
+    mov x8, #93
+    svx #0
+
+lets add a block so we dont miss a streak 
 
